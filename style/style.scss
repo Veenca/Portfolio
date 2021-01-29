@@ -108,7 +108,7 @@ img{
 }
 .info{
     display: grid;
-    grid-template-rows: 2fr 3.5fr 1.5fr;
+    grid-template-rows: 1fr 4.4fr 1.4fr;
    
 }
 .nav{
@@ -129,16 +129,30 @@ img{
 #boldP{
   text-align: center;
 }
-
-
-.icon-container{
+.content{
     display: flex;
-    text-align: center;
     justify-content: center;
+   align-items: center;
+   /*  background: red; */
+}
+#content-container{
+  background:#6cdbeb;
+   max-height: 50vh;
+    width: 100%;
+    border: 5px solid  #6cdbeb;
+    box-shadow: 5px 10px 10px #6cdbeb;
+   border-radius: 20px;
+   overflow: scroll;
+   overflow-x: hidden; 
+}
+.foot{
+    display: flex;
     align-items: center;
+    justify-content: center;
+}
+.icon-container{
+    display: inline;
     background:white;
-    width: 40px;
-    height: 40px;
     border-radius: 50%;
     
 }

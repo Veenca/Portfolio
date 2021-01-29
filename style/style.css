@@ -148,8 +148,8 @@ img {
 .info {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 2fr 3.5fr 1.5fr;
-      grid-template-rows: 2fr 3.5fr 1.5fr;
+  -ms-grid-rows: 1fr 4.4fr 1.4fr;
+      grid-template-rows: 1fr 4.4fr 1.4fr;
 }
 
 .nav {
@@ -184,20 +184,46 @@ img {
   text-align: center;
 }
 
-.icon-container {
+.content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /*  background: red; */
+}
+
+#content-container {
+  background: #6cdbeb;
+  max-height: 50vh;
+  width: 100%;
+  border: 5px solid  #6cdbeb;
+  -webkit-box-shadow: 5px 10px 10px #6cdbeb;
+          box-shadow: 5px 10px 10px #6cdbeb;
+  border-radius: 20px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.icon-container {
+  display: inline;
   background: white;
-  width: 40px;
-  height: 40px;
   border-radius: 50%;
 }
 
